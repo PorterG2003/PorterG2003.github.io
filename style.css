@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Rockwell", "Courier New", monospace;
+  color: #fff;
+}
+
+body {
+  background-color: #060606;
+}
+
+#nav {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 40px;
+}
+
+#nav a {
+  text-decoration: none;
+  padding: 30px;
+}
+
+#nav a div {
+  position: absolute;
+  margin: auto;
+  height: 10px;
+  background-color: #fff;
+}
+
+#nav a:hover div {
+  animation-name: hover;
+  animation-duration: 2s;
+  width: 100%;
+}
+
+#name {
+  font-size: 100px;
+  top: 200px;
+  left: 10%;
+  position: relative;
+  animation-name: slideFromRight;
+  animation-duration: 2s;
+}
+
+#bio {
+  color: #3594d4;
+  font-size: 30px;
+  top: 200px;
+  left: 10%;
+  position: relative;
+  animation-name: slideFromRight;
+  animation-duration: 2s;
+}
+
+#portrait {
+  background-image: url("IMG_0889.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  width: 600px;
+  height: 600px;
+  animation-name: slideUpPortrait;
+  animation-duration: 2s;
+}
+
+#heading {
+  display: inline-block;
+  font-size: 100px;
+  left: 10%;
+  position: relative;
+  animation-name: slideFromRight;
+  animation-duration: 1s;
+}
+
+#subheading {
+  color: #3594d4;
+  display: inline-block;
+  font-size: 30px;
+  left: 11%;
+  position: relative;
+  animation-name: slideFromRightAfter;
+  animation-duration: 2s;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  height: 650px;
+  position: relative;
+  animation-name: slideUp;
+  animation-duration: 1s;
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 0;
+  width: 60%;
+  padding: 20px;
+}
+
+#contact input, textarea, button {
+  padding: 1%;
+  margin: 1.5%;
+  color: #000;
+  font-size: 20px;
+  border: 0;
+}
+
+#name-input {
+  width: 45%;
+  height: 45px;
+}
+
+#email-input {
+  width: 45%;
+  height: 45px;
+}
+
+#message-input {
+  width: 95%;
+  height: 150px;
+}
+
+#send {
+  background-color: #3594d4;
+  color: #fff;
+  width: 40%;
+  height: 45px;
+  line-height: 50px;
+  padding: 0;
+}
+
+#send:hover {
+  background-color: #2b78ab;
+}
+
+.project {
+  background-color: #333;
+  display: block;
+  width: 400px;
+  height: 400px;
+  text-decoration: none;
+}
+
+.project-photo {
+  display: absolute;
+  width: 100%;
+  height: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#alcohol-photo {
+  background-image: url("teens.jpg");
+}
+
+#avocado-photo {
+  background-image: url("avocado.jpg");
+}
+
+#mnist-photo {
+  background-image: url("mnist.png");
+}
+
+.project-heading {
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.project-bio {
+  padding: 10px;
+  padding-top: 0;
+  text-align: center;
+}
+
+.notebook {
+  width: 90%;
+  height: 100%;
+}
+
+#about-wrapper {
+  width: 70%;
+  margin: auto;
+  position: relative;
+  animation-name: slideUp;
+  animation-duration: 1s;
+}
+
+#about-wrapper h1 {
+  padding-bottom: 20px;
+}
+
+#about-wrapper h3 {
+  display: inline-block;
+}
+
+#about-wrapper h5 {
+  padding-bottom: 15px;
+}
+
+#about-wrapper ul {
+  position: relative;
+  left: 50px;
+  padding-bottom: 15px;
+}
+
+#about-wrapper p {
+  position: relative;
+  left: 50px;
+}
+
+#about-wrapper p, li {
+  padding-bottom: 3px;
+}
+
+.colored-header {
+  color: #3594d4;
+}
+
+.divider {
+  background-color: #333;
+  height: 2px;
+  width: 95%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@keyframes hover {
+  0% {width: 0;}
+  100% {width: 100%}
+}
+
+@keyframes slideFromRight {
+  0%   {left:-800px;}
+  100% {left:10%;}
+}
+
+@keyframes slideFromRightAfter {
+  0%   {left:-1100px;}
+  40%  {left:-1100px;}
+  100% {left:11%;}
+}
+
+@keyframes slideUp {
+  0%   {margin-top: 25px;}
+  100% {margin-top: 0px;}
+}
+
+@keyframes slideUpPortrait {
+  0%   {bottom: 5%;}
+  100% {bottom: 10%;}
+}
