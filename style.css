@@ -265,6 +265,11 @@ body {
     height: 550px;
     bottom: 15%
   }
+
+  .project {
+    height: 330px;
+    width: 330px;
+  }
 }
 
 @media only screen and (max-width: 1365px) {
@@ -279,6 +284,19 @@ body {
   #portrait {
     height: 500px;
     bottom: 22%
+  }
+
+  .project {
+    height: 300px;
+    width: 300px;
+  }
+
+  .project-heading {
+    font-size: 16px;
+  }
+
+  .project-bio {
+    font-size: 12px;
   }
 }
 
@@ -349,10 +367,18 @@ body {
   }
 
   #subheading {
+    margin-bottom: 20px;
     font-size: 20px;
     text-align: center;
     left: 0;
     width: 100%;
+    animation-name: slideFromRightToCenter;
+    animation-duration: 2s;
+  }
+
+  #contact {
+    width: 90%;
+    padding-top: 0;
   }
 
   #contact input, textarea, button {
@@ -398,6 +424,10 @@ body {
   #portrait {
     top: 60px;
   }
+
+  #contact {
+    width: 85%;
+  }
 }
 
 @media only screen and (max-width: 535px) {
@@ -422,6 +452,23 @@ body {
     top: 40px;
     width: 400px;
     height: 400px;
+  }
+
+  #contact {
+    width: 100%;
+  }
+
+  #contact input, textarea, button {
+    font-size: 17px;
+  }
+
+  #heading {
+    font-size: 50px;
+    height: 50px;
+  }
+
+  #subheading {
+    font-size: 17px;
   }
 }
 
@@ -448,6 +495,32 @@ body {
     width: 300px;
     height: 350px;
   }
+
+  #contact input, textarea, button {
+    font-size: 13px;
+  }
+
+  #heading {
+    font-size: 45px;
+    height: 45px;
+  }
+
+  #subheading {
+    font-size: 13px;
+  }
+
+  .project {
+    height: 270px;
+    width: 270px;
+  }
+
+  .project-heading {
+    font-size: 13px;
+  }
+
+  .project-bio {
+    font-size: 8px;
+  }
 }
 
 @media only screen and (max-width: 300px) {
@@ -472,6 +545,23 @@ body {
     top: 30px;
     width: 250px;
     height: 330px;
+  }
+
+  #contact input, textarea, button {
+    font-size: 12px;
+  }
+
+  #heading {
+    font-size: 40px;
+    height: 40px;
+  }
+
+  #subheading {
+    font-size: 12px;
+  }
+
+  .project-photo {
+    height: 65%;
   }
 }
 
