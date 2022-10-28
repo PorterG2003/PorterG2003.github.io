@@ -203,7 +203,6 @@ body {
   width: 90%;
   height: 100%;
 }
-
 #about-wrapper {
   width: 70%;
   margin: auto;
@@ -237,6 +236,16 @@ body {
 
 #about-wrapper p, li {
   padding-bottom: 3px;
+}
+
+#intro {
+  text-indent: 3%;
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  left: 0;
 }
 
 .colored-header {
@@ -392,6 +401,35 @@ body {
   #email-input {
     width: 100%;
   }
+
+  #about-wrapper h1 {
+    font-size: 22px;
+    padding-bottom: 18px;
+  }
+
+  #about-wrapper ul {
+    left: 30px;
+  }
+
+  #about-wrapper p {
+    left: 30px;
+  }
+
+  #about-wrapper p, li {
+    font-size: 14px;
+  }
+
+  #intro {
+    font-size: 14px;
+  }
+
+  #about-wrapper h3 {
+    font-size: 16px;
+  }
+
+  #about-wrapper h5 {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -470,6 +508,26 @@ body {
   #subheading {
     font-size: 17px;
   }
+
+  #about-wrapper h1 {
+    font-size: 18px;
+  }
+
+  #about-wrapper p, li {
+    font-size: 11px;
+  }
+
+  #intro {
+    font-size: 11px;
+  }
+
+  #about-wrapper h3 {
+    font-size: 15px;
+  }
+
+  #about-wrapper h5 {
+    font-size: 11px;
+  }
 }
 
 @media only screen and (max-width: 410px) {
@@ -519,6 +577,34 @@ body {
   }
 
   .project-bio {
+    font-size: 8px;
+  }
+
+  #about-wrapper h1 {
+    font-size: 15px;
+  }
+
+  #about-wrapper ul {
+    left: 15px;
+  }
+
+  #about-wrapper p {
+    left: 15px;
+  }
+
+  #about-wrapper p, li {
+    font-size: 8px;
+  }
+
+  #intro {
+    font-size: 8px;
+  }
+
+  #about-wrapper h3 {
+    font-size: 10px;
+  }
+
+  #about-wrapper h5 {
     font-size: 8px;
   }
 }
@@ -594,4 +680,9 @@ body {
 @keyframes slideUpPortrait {
   0%   {bottom: 5%;}
   100% {bottom: 10%;}
+}
+
+@keyframes sendMail {
+  0%   {right: 20%;}
+  100% {right: -2000px;}
 }
