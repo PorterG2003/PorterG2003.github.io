@@ -272,7 +272,7 @@ body {
 
   #portrait {
     height: 550px;
-    bottom: 15%
+    bottom: 15%;
   }
 
   .project {
@@ -292,7 +292,7 @@ body {
 
   #portrait {
     height: 500px;
-    bottom: 22%
+    bottom: 15%;
   }
 
   .project {
@@ -402,9 +402,13 @@ body {
     width: 100%;
   }
 
+  #about-wrapper {
+    width: 80%;
+  }
+
   #about-wrapper h1 {
     font-size: 22px;
-    padding-bottom: 18px;
+    padding-bottom: 10px;
   }
 
   #about-wrapper ul {
@@ -429,6 +433,11 @@ body {
 
   #about-wrapper h5 {
     font-size: 14px;
+  }
+
+  .divider {
+    margin-top: 0;
+    margin-bottom: 14px;
   }
 }
 
@@ -477,8 +486,6 @@ body {
   #name {
     top: 40px;
     font-size: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   #bio {
@@ -530,7 +537,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 414px) {
   #nav a {
     padding: 15px;
     font-size: 12px;
@@ -539,8 +546,6 @@ body {
   #name {
     top: 35px;
     font-size: 45px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   #bio {
@@ -582,10 +587,12 @@ body {
 
   #about-wrapper h1 {
     font-size: 15px;
+    padding-bottom: 5px;
   }
 
   #about-wrapper ul {
     left: 15px;
+    padding-bottom: 5px;
   }
 
   #about-wrapper p {
@@ -606,6 +613,7 @@ body {
 
   #about-wrapper h5 {
     font-size: 8px;
+    padding-bottom: 5px;
   }
 }
 
@@ -648,284 +656,6 @@ body {
 
   .project-photo {
     height: 65%;
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 3) {
-  #nav {
-    justify-content: center;
-    padding: 0;
-  }
-
-  #nav a {
-    padding: 70px;
-    font-size: 30px;
-  }
-
-  #nav a div {
-    height: 3px;
-    width: 0;
-    position: relative;
-  }
-
-  #nav a:hover div {
-    animation-duration: .2s;
-  }
-
-  #name {
-    left: 0;
-    text-align: center;
-    animation-name: slideFromRightToCenter;
-    animation-duration: 2s;
-  }
-
-  #bio {
-    left: 0;
-    text-align: center;
-    animation-name: slideFromRightToCenter;
-    animation-duration: 2s;
-  }
-
-  #portrait {
-    position: relative;
-    margin: auto;
-    top: 100px;
-    right: 0;
-    width: 900px;
-    height: 900px;
-  }
-
-  #heading {
-    font-size: 70px;
-    text-align: center;
-    left: 0;
-    height: 70px;
-    width: 100%;
-    animation-name: slideFromRightToCenter;
-    animation-duration: 2s;
-  }
-
-  #subheading {
-    margin-bottom: 50px;
-    font-size: 20px;
-    text-align: center;
-    left: 0;
-    width: 100%;
-    animation-name: slideFromRightToCenter;
-    animation-duration: 2s;
-  }
-
-  #contact {
-    width: 90%;
-    padding-top: 0;
-  }
-
-  #contact input {
-    height: 75px;
-    font-size: 30px;
-  }
-
-  #contact textarea {
-    height: 300px;
-    font-size: 30px;
-  }
-
-  #contact input, textarea, button {
-    padding-left: 10px;
-  }
-
-  #name-input {
-    width: 100%;
-  }
-
-  #email-input {
-    width: 100%;
-  }
-
-  .project {
-    width: 600px;
-    height: 600px;
-    margin-bottom: 30px;
-  }
-
-  .project-heading {
-    font-size: 30px;
-  }
-
-  .project-bio {
-    font-size: 23px;
-  }
-
-  #about-wrapper {
-    width: 80%;
-  }
-
-  #about-wrapper h1 {
-    font-size: 40px;
-    padding-bottom: 18px;
-  }
-
-  #about-wrapper ul {
-    left: 50px;
-  }
-
-  #about-wrapper p {
-    left: 50px;
-  }
-
-  #about-wrapper p, li {
-    font-size: 12px;
-  }
-
-  #intro {
-    font-size: 12px;
-  }
-
-  #about-wrapper h3 {
-    font-size: 30px;
-  }
-
-  #about-wrapper h5 {
-    display: none;
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  #nav {
-    justify-content: center;
-    padding: 0;
-  }
-
-  #nav a {
-    padding: 70px;
-    font-size: 30px;
-  }
-
-  #nav a div {
-    height: 3px;
-    width: 0;
-    position: relative;
-  }
-
-  #nav a:hover div {
-    animation-duration: .2s;
-  }
-
-  #name {
-    left: 0;
-    text-align: center;
-    animation-name: slideFromRightToCenter;
-    animation-duration: 2s;
-  }
-
-  #bio {
-    left: 0;
-    text-align: center;
-    animation-name: slideFromRightToCenter;
-    animation-duration: 2s;
-  }
-
-  #portrait {
-    position: relative;
-    margin: auto;
-    top: 100px;
-    right: 0;
-    width: 900px;
-    height: 900px;
-  }
-
-  #heading {
-    font-size: 70px;
-    text-align: center;
-    left: 0;
-    height: 70px;
-    width: 100%;
-    animation-name: slideFromRightToCenter;
-    animation-duration: 2s;
-  }
-
-  #subheading {
-    margin-bottom: 50px;
-    font-size: 20px;
-    text-align: center;
-    left: 0;
-    width: 100%;
-    animation-name: slideFromRightToCenter;
-    animation-duration: 2s;
-  }
-
-  #contact {
-    width: 90%;
-    padding-top: 0;
-  }
-
-  #contact input {
-    height: 75px;
-    font-size: 30px;
-  }
-
-  #contact textarea {
-    height: 300px;
-    font-size: 30px;
-  }
-
-  #contact input, textarea, button {
-    padding-left: 10px;
-  }
-
-  #name-input {
-    width: 100%;
-  }
-
-  #email-input {
-    width: 100%;
-  }
-
-  .project {
-    width: 600px;
-    height: 600px;
-    margin-bottom: 30px;
-  }
-
-  .project-heading {
-    font-size: 30px;
-  }
-
-  .project-bio {
-    font-size: 23px;
-  }
-
-  #about-wrapper {
-    width: 80%;
-  }
-
-  #about-wrapper h1 {
-    font-size: 40px;
-    padding-bottom: 18px;
-  }
-
-  #about-wrapper ul {
-    left: 50px;
-  }
-
-  #about-wrapper p {
-    left: 50px;
-  }
-
-  #about-wrapper p, li {
-    font-size: 12px;
-  }
-
-  #intro {
-    font-size: 12px;
-  }
-
-  #about-wrapper h3 {
-    font-size: 30px;
-  }
-
-  #about-wrapper h5 {
-    display: none;
   }
 }
 
