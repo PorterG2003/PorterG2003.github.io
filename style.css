@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Rockwell';
+    src: url('fonts/Rockwell.woff2') format('woff2'),
+        url('fonts/Rockwell.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rockwell';
+    src: url('fonts/Rockwell-Bold.woff2') format('woff2'),
+        url('fonts/Rockwell-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
   padding: 0;
   margin: 0;
