@@ -23,8 +23,10 @@
   color: #fff;
 }
 
+html,
 body {
   background-color: #060606;
+  height: 100vh;
 }
 
 #nav {
@@ -81,7 +83,7 @@ body {
   bottom: 10%;
   right: 8%;
   width: 30%;
-  height: 600px;
+  height: 700px;
   animation-name: slideUpPortrait;
   animation-duration: 2s;
 }
@@ -284,6 +286,10 @@ body {
   margin: auto;
   margin-top: 10px;
   margin-bottom: 25px;
+}
+
+.spacer50 {
+  height: 50px;
 }
 
 @media only screen and (max-width: 1515px) {
