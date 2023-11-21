@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Porter Gardiner</title>
+  <link rel="stylesheet" href="../style.css"> 
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+</head>
+
+<body>
+  <div id="nav">
+    <a href="about.html">About<div></div></a>
+    <a href="projects.html">Projects<div></div></a>
+    <a href="contact.html">Contact<div></div></a>
+    <a href="index.html">Home<div></div></a>
+  </div>
+  <div id="heading">Globe</div>
+  <div id="locationInputBar">
+    <input id="locationInput" class="box" placeholder="Enter a place you have visited">
+    <button id="addLocation" class="box"><img src="../icons/location_pin_white.png" alt="Add" id="pinIcon"></button>
+  </div>
+  <div id="locationListWrapper" class="box">
+    <h3>Locations</h3>
+    <ul id="locationList">
+    </ul>
+  </div>
+  <div id="resultsWrapper" class="box">
+    <h3>Results</h3>
+    <ul id="locationList">
+    </ul>
+    <button id="runButton" class="box">Run</button>
+  </div>
+  <script src="globe.js"></script>
+</body>
+
+</html>
