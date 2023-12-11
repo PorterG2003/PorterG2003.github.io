@@ -97,6 +97,15 @@ body {
   animation-duration: 1s;
 }
 
+.notebook-heading {
+  display: inline-block;
+  font-size: 90px;
+  left: 10%;
+  position: relative;
+  animation-name: slideFromRight;
+  animation-duration: 1s;
+}
+
 #subheading {
   color: #3594d4;
   display: inline-block;
@@ -108,19 +117,109 @@ body {
   margin-top: 5px;
 }
 
-#wrapper {
+#wrapper, .wrapper {
   position: relative;
   display: flex;
-  height: 650px;
-  margin: 10%;
-  margin-top: 0;
-  margin-bottom: 0;
+  height: auto;
+  margin: 0px 10%;
+  padding-bottom: 100px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   animation-name: slideUp;
   animation-duration: 1s;
+}
+
+#notebook-wrapper {
+  position: relative;
+  display: flex;
+  height: 70vh;
+  max-width: 95vw;
+  margin: auto;
+  padding-bottom: 100px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  animation-name: slideUp;
+  animation-duration: 1s;
+}
+
+.notebook {
+  width: 90%;
+  max-width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#pokemon-wrapper {
+  max-width: 1000px;
+  height: auto;
+  margin: 0px auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  animation-name: slideUp;
+  animation-duration: 1s;
+}
+
+#repository {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-section ul {
+  margin-left: 40px;
+}
+
+.pokemon-section p {
+  margin-left: 26px;
+}
+
+#pokemon-inline-photo {
+  width: 300px;
+  height: 200px;
+  background-image: url("Pikachu_vs_Bulbasaur_animation.gif");
+  background-position: center;
+  position: relative;
+  margin: auto;
+}
+
+.git-button-wrapper {
+  width: 100%;
+}
+
+.git-button {
+  background-color: #6e5494;
+  color: #fff;
+  width: auto;
+  min-width: 301px;
+  height: auto;
+  line-height: 0;
+  padding: 15px 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.git-button:hover {
+  background-color: #5a4679;
+}
+
+.git-button div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.git-button div svg {
+
 }
 
 #contact {
@@ -200,6 +299,10 @@ body {
   background-image: url("mnist.png");
 }
 
+#pokemon-photo {
+  background-image: url("Pikachu_vs_Bulbasaur_animation.gif");
+}
+
 .project-heading {
   font-size: 18px;
   padding: 10px;
@@ -222,12 +325,8 @@ body {
   text-align: center;
 }
 
-.notebook {
-  width: 90%;
-  height: 100%;
-  margin: auto;
-  min-width: 968px;
-  margin-top: 10px;
+.pokemon-section {
+  max-width: 1000px;
 }
 
 #about-wrapper {
@@ -261,7 +360,7 @@ body {
   left: 50px;
 }
 
-#about-wrapper p, li {
+#about-wrapper p, #about-wrapper li {
   padding-bottom: 3px;
 }
 
@@ -362,10 +461,19 @@ body {
   }
 }
 
+@media only screen and (max-width: 1100px) {
+  .notebook-heading {
+    font-size: 80px;
+  }
+
+  #pokemon-wrapper {
+    max-width: 90%;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
-  .notebook {
-    position: absolute;
-    left: -7%;
+  .notebook-heading {
+    font-size: 70px;
   }
 }
 
@@ -418,6 +526,23 @@ body {
     animation-duration: 2s;
   }
 
+  .notebook-heading {
+    left: 0;
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+    animation-name: slideFromRightToCenter;
+    animation-duration: 2s;
+  }
+
+  .pokemon-heading {
+    margin-bottom: 10px;
+  }
+
+  .pokemon-section p, .pokemon-section li  {
+    margin-right: 26px;
+  }
+
   #subheading {
     margin-bottom: 20px;
     font-size: 20px;
@@ -462,7 +587,7 @@ body {
     left: 30px;
   }
 
-  #about-wrapper p, li {
+  #about-wrapper p, #about-wrapper li {
     font-size: 14px;
   }
 
@@ -555,6 +680,11 @@ body {
     height: 50px;
   }
 
+  .notebook-heading {
+    font-size: 50px;
+    height: 50px;
+  }
+
   #subheading {
     font-size: 17px;
   }
@@ -563,7 +693,7 @@ body {
     font-size: 18px;
   }
 
-  #about-wrapper p, li {
+  #about-wrapper p, #about-wrapper li {
     font-size: 11px;
   }
 
@@ -577,6 +707,10 @@ body {
 
   #about-wrapper h5 {
     font-size: 11px;
+  }
+
+  .git-button {
+    min-width: 272px;
   }
 }
 
@@ -611,6 +745,15 @@ body {
     height: 45px;
   }
 
+  .notebook-heading {
+    font-size: 45px;
+    height: 45px;
+  }
+
+  .pokemon-section p, .pokemon-section li  {
+    margin: 0px 16px;
+  }
+
   #subheading {
     font-size: 13px;
   }
@@ -642,7 +785,7 @@ body {
     left: 15px;
   }
 
-  #about-wrapper p, li {
+  #about-wrapper p, #about-wrapper li {
     font-size: 8px;
   }
 
@@ -657,6 +800,10 @@ body {
   #about-wrapper h5 {
     font-size: 8px;
     padding-bottom: 5px;
+  }
+
+  .git-button {
+    min-width: 233px;
   }
 }
 
@@ -693,12 +840,21 @@ body {
     height: 40px;
   }
 
+  .notebook-heading {
+    font-size: 40px;
+    height: 40px;
+  }
+
   #subheading {
     font-size: 12px;
   }
 
   .project-photo {
     height: 65%;
+  }
+
+  .git-button {
+    min-width: 223px;
   }
 }
 
@@ -746,4 +902,13 @@ body {
 @keyframes sendMail {
   0%   {right: 20%;}
   100% {right: -2000px;}
+}
+
+.invert-color {
+    filter: invert(100%);
+}
+
+.blank {
+  background: #060606;
+  cursor: default;
 }
